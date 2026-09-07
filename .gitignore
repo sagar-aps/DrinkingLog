@@ -2,6 +2,12 @@
 .agent-run/
 .agent-handoff.md
 .agents/ralph/config.local.sh
-.agents/ralph/efficiency.json
-.agents/ralph/gh-apps/
+
+# Never commit credentials. GitHub App private keys live outside this repo
+# entirely (see scripts/identity.sh); this is belt-and-braces.
 *.pem
+
+# NOTE: do not create a .agents/ralph/ directory here. bin/ralph resolves its
+# templates from "$PWD/.agents/ralph" when it exists, so a partial one makes
+# every `ralph` command run from this repo fail. The efficiency profile lives at
+# ~/.config/ralph/DrinkingLog/efficiency.json instead.

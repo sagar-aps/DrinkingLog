@@ -6,5 +6,10 @@
   },
   "preview": {
     "enabled": false
+  },
+  "identity": {
+    "enabled": true,
+    "wrapper": "/home/sagar_ap/homelab/DrinkingLog/scripts/identity.sh",
+    "role": "orchestrator"
   }
 }

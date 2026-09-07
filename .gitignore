@@ -1,0 +1,7 @@
+.ralph/
+.agent-run/
+.agent-handoff.md
+.agents/ralph/config.local.sh
+.agents/ralph/efficiency.json
+.agents/ralph/gh-apps/
+*.pem
